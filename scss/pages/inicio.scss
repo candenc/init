@@ -1,0 +1,138 @@
+// SHOWCASE
+.showcase {
+    width: 100%;
+    height: 550px;
+    padding-bottom:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    background:url(/images/img.jpeg) no-repeat center center/cover;
+    h2,p{ margin-bottom: 10px;;
+    }
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border:0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color:rgb(243, 237, 241);
+    color: rgb(17, 5, 5);
+    font-size: 15px;
+    border: 1px solid rgb(26, 25, 25);
+    margin: 1px 0;
+    margin-top:20px;
+}
+.btn :hover {
+    opacity:0.9;
+}
+
+// NEW CARDS
+.notice{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:25px;
+    margin: 70px 0;
+    .img{
+        width: 100%;
+        height: 180px;
+    }
+
+    h2{
+        font-size: 20px;
+        margin:10px 0;
+    }
+
+    a:hover{
+        padding: 10px 0;
+        color:antiquewhite;
+        text-transform: uppercase;
+        display: inline-block ;
+        text-decoration: underline;
+        font-weight: bold;
+
+    }
+   
+}
+
+.banner{
+    width: 100%;
+    height: 350px;
+    background:url(/images/imgg.webp) no-repeat center center/cover;
+    margin-bottom: 40px;
+
+}
+
+// Links//
+.social{
+    margin: 50px;
+
+}
+.social p {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.rutas {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 1%;
+    a i { 
+        margin: 0 30px;
+        font-size: 2rem;
+    }
+}
+
+.derechos{
+    text-align: center;
+    
+}
+
+
+  
+  @media (max-width: 700px) {
+    .menuB{ display: block;}
+   .nav-main ul.nav-menu {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: #2f3640;
+          width: 50%;
+          height: 100%;
+          border-right: rgb(247, 245, 245) 1px solid;
+          opacity: 0.9;
+          padding: 30px;
+          transform: translateX(-500px);
+          transition: transform 0.5s ease-in-out;
+        }
+        .notice{
+            grid-template-columns:repeat(2, 1fr);
+           } 
+  }
+
+  @media (max-width: 400px) {
+    .notice{
+     grid-template-columns: 1fr;
+     
+        img{
+            height: 270px;
+        }
+    } 
+    .menuB{ display: block;}
+
+   }
+
+
+
+
+
+
+
+
