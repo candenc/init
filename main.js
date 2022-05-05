@@ -3,6 +3,7 @@ let menuB=document.getElementById("menuB").addEventListener('click', ()=>{
 })
 let btn1=document.getElementById("btn1").addEventListener('click', ()=>{
     console.log("Haz clickeado");
+    swal("Hello world!");
     
 })
 let btn2=document.getElementById("btn2").addEventListener('click', ()=>{
@@ -46,4 +47,8 @@ const cargarContactos=(baseDatos)=>{
 
 
 cargarContactos(baseDatos);
+
+ScrollReveal().reveal('.showcase');
+ScrollReveal().reveal('.notice', {delay: 5000});
+
 
